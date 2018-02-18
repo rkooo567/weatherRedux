@@ -1,7 +1,6 @@
-import { API_key, ROOT_URL } from '../constants/constant';
+import { ROOT_URL } from '../constants/constant';
 import axios from 'axios';
-
-export const FETCH_WEATHER = 'FETCH_WEATHER';
+import { FETCH_WEATHER } from '../constants/type_constant';
 
 export function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},us`;
